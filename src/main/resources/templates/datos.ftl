@@ -8,7 +8,7 @@
 <h3>Datos Cambiados</h3>
     <table>
         <tbody>
-        <tr><td>Matricula</td><td>${est.matricula}</td></tr>
+        <tr><td>Matricula</td><td>${est.matricula?string["0"]}</td></tr>
         <tr><td>Nombre</td><td>${est.nombre}</td></tr>
         <tr><td>Apellido</td><td>${est.apellido}</td></tr>
         <tr><td>Telefono</td><td>${est.telefono}</td></tr>

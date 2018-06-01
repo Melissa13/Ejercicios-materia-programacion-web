@@ -6,7 +6,7 @@
 
 <#macro page_body>
 <h3>Editar datos del estudainte</h3>
-<form class="form-inline" method="POST" action="/editado/${mat}">
+<form class="form-inline" method="POST" action="/editado/${mat?string["0"]}">
     Matricula: <input name="matricula" type="number"/><br/>
     Nombre: <input name="nombre" type="text"/><br/>
     Apellido: <input name="apellido" type="text"/><br/>

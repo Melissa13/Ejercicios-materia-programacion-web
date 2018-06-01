@@ -5,10 +5,10 @@
 </#macro>
 
 <#macro page_body>
-<h1>Datos agregados</h1>
+<h3>Datos agregados</h3>
     <table>
         <tbody>
-        <tr><td>Matricula</td><td>${est.matricula}</td></tr>
+        <tr><td>Matricula</td><td>${est.matricula?string["0"]}</td></tr>
         <tr><td>Nombre</td><td>${est.nombre}</td></tr>
         <tr><td>Apellido</td><td>${est.apellido}</td></tr>
         <tr><td>Telefono</td><td>${est.telefono}</td></tr>

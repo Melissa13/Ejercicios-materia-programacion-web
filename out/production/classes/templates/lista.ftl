@@ -5,7 +5,7 @@
 </#macro>
 
 <#macro page_body>
-<h1>pagina de listas</h1>
+<h3>pagina de listas</h3>
     <p>
     <h5>Cantidad de estudiantes: ${lista?size}</h5>
         <table>
