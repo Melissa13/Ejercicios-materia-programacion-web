@@ -5,5 +5,6 @@
 </#macro>
 
 <#macro page_body>
-<h1>Hola ${name}</h1>
+<h1>Practica #2 de Programacion Web</h1>
+<h3>Por: ${name}</h3>
 </#macro>

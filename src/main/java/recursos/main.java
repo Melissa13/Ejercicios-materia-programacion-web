@@ -42,7 +42,7 @@ public class main {
 
         get("/", (request, response) -> {
             Map<String, Object> mapa = new HashMap<>();
-            mapa.put("name","Melissa");
+            mapa.put("name","Melissa Lantigua - 2014-0805");
             return new ModelAndView(mapa, "home.ftl");
         }, motor);
 
@@ -186,11 +186,13 @@ public class main {
         get("/delet/:matricula", (request, response)->{
             int matricula= Integer.parseInt(request.params("matricula"));
             Map<String, Object> mapa = new HashMap<>();
+            estudiante est=new estudiante(0,"desconocido","desconocido","desconocido");
             for(estudiante est2 : usuarios) {
                 if(est2.getMatricula()==matricula) {
-                    usuarios.remove(est2);
+                    est=est2;
                 }
             }
+            usuarios.remove(est);
             return new ModelAndView(mapa, "delete.ftl");
         }, motor);
 
